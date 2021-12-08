@@ -3,6 +3,8 @@
 #include <iostream>
 #include <vector>
 #include <list>
+#include <array>
+#include <tuple>
 
 namespace is_stl_container_impl {
     template<typename T>
