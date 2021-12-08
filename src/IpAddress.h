@@ -1,7 +1,8 @@
 #pragma once
 
 #include <iostream>
-#include <unordered_set>
+#include <vector>
+#include <list>
 
 namespace is_stl_container_impl {
     template<typename T>
