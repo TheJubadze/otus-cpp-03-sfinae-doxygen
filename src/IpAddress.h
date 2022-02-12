@@ -30,7 +30,7 @@ template<typename T>
 typename std::enable_if<std::is_integral<T>::value>::type
 PrintIp(T ipAddress) {
     auto bytes = reinterpret_cast<unsigned char *>(&ipAddress);
-    for (int i = 0; i < sizeof(T); ++i) {
+    for (int i = sizeof(T) - 1; i >= 0; --i) {
         std::cout << static_cast<short>(bytes[i]) << ".";
     }
     std::cout << "\tintegral: " << sizeof(T) << " bytes\n";
